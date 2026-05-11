@@ -143,7 +143,6 @@ FileSafe/
 - Core functionality complete
 - Encryption and decryption verified
 - Matches the workflow described in the research paper
-- Ready for academic submission and evaluation
 
 ---
 
