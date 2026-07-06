@@ -1,11 +1,10 @@
-# Sensitive data
-keys/
-uploads/
-users.db
-
-# Python cache
 __pycache__/
 *.pyc
-
-# Environment
 .env
+.DS_Store
+keys/
+uploads/
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/terraform.tfvars

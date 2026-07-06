@@ -8,15 +8,15 @@
     <section class="hero-text">
         <h1>
             Secure file<br>
-            sharing,<br>
+            storage,<br>
             built for<br>
             trust.
         </h1>
 
         <p>
-            Encrypt files locally using AES-GCM.
-            Control access with RSA key wrapping.
-            The cloud stores only data and never the keys.
+            Files are encrypted with AES-256-GCM before being stored.
+	    Each file's key is wrapped with your RSA public key.
+	    Only your account can unwrap it.
         </p>
         <div style="margin-top: 48px;">
             <a href="/dashboard" class="cta-btn">Go to dashboard</a>
@@ -41,9 +41,8 @@
 
         <div class="upload-details">
             <p><strong>Upload a file</strong></p>
-            <p>Supported formats: PDF, TXT, JPG, DOC, ZIP, EXE</p>
-            <p>Maximum size limit: 1 GB per file</p>
-            <p>Client side encryption · Integrity verification</p>
+            <p>Supported formats: PDF, TXT, JPG, DOC, ZIP</p>
+            <p>Hybrid encryption · Integrity verification</p>
         </div>
 
     </section>

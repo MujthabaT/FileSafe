@@ -7,7 +7,7 @@
     <section class="dashboard-header">
     <div class="header-left">
         <h1>Dashboard</h1>
-        <p>Your files are encrypted locally and verified before storage.</p>
+        <p>Your files are encrypted with AES-256-GCM and verified before storage.</p>
     </div>
 
     {% if uploaded %}
@@ -24,7 +24,6 @@
         <div class="dash-card primary-card">
             <h3>Upload file</h3>
             <p>
-                Files are encrypted using AES-GCM before leaving your device.
                 Integrity is verified automatically.
             </p>
 
