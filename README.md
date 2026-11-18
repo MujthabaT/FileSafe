@@ -7,7 +7,7 @@ built with Flask and MySQL, deployed on AWS EC2 using Docker Compose and
 Terraform, automated with GitHub Actions, and monitored using Prometheus
 and Grafana.
 
-**Live:** https://file-safe.duckdns.org
+**Live:** www.mujthaba.in
 
 ## Screenshots
 
