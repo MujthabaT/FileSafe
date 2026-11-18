@@ -12,21 +12,22 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh '''
-                    pip3 install -r requirements.txt
-                    pip3 install flake8
+                    python3 -m venv .venv
+                    .venv/bin/pip install -r requirements.txt
+                    .venv/bin/pip install flake8
                 '''
             }
         }
 
         stage('Lint') {
             steps {
-                sh 'flake8 . --max-line-length=120'
+                sh '.venv/bin/flake8 --exclude=.venv --max-line-length=120 .'
             }
         }
 
         stage('Application Import Check') {
             steps {
-                sh 'python3 -c "import app"'
+                sh '.venv/bin/python -c "import app"'
             }
         }
 
